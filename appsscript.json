@@ -1,0 +1,45 @@
+{
+  "timeZone": "Asia/Calcutta",
+  "dependencies": {
+  },
+  "oauthScopes" : [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/script.storage",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.compose",
+    "https://www.googleapis.com/auth/gmail.modify"
+  ],
+  "exceptionLogging": "STACKDRIVER",
+  "urlFetchWhitelist": [
+    "https://app.xeninc.us/",
+    "https://login.microsoftonline.com/",
+    "https://accounts.zoho.com/",
+    "https://api.dropboxapi.com/",
+    "https://api.onedrive.com/",
+    "https://graph.microsoft.com/",
+    "https://api.box.com/",
+    "https://www.googleapis.com/",
+    "https://apidocs.zoho.com/"
+  ],
+  "gmail" : {
+    "name" : "Experiment plugin",
+    "logoUrl" : "https://www.backflipt.com/images/backflipt-logo-icon.png",
+    "contextualTriggers": [{
+      "unconditional": {
+      },
+      "onTriggerFunction": "myFunction1"
+    }],
+    "openLinkUrlPrefixes": [
+      "https://www.backflipt.com/",
+      "https://login.microsoftonline.com/",
+      "https://accounts.zoho.com/",
+      "https://login.salesforce.com/",
+      "https://account.box.com/",
+      "https://www.dropbox.com/",
+      "https://login.live.com/",
+      "https://secure.sharefile.com/"
+    ]
+  }
+}
